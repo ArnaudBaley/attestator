@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <meta charset="utf-8" />
+        <title>Titre</title>
+    </head>
+    <body>
+    
+        <h1>Attestator</h1>
+
+        <h2>Remplissez en ligne votre déclaration numérique :</h2>
+
+        <p>Tous les champs sont obligatoires</p>
+
+        <div id="formInput">
+
+            <div class="formField">
+                <label for="s">Prénom</label>
+                <input type="text" placeholder="Camille" id="firstName">
+            </div>
+
+            <div class="formField">
+                <label for="lastName">Nom</label>
+                <input type="text" placeholder="Dupont" id="lastName">
+            </div>
+
+            <div class="formField">
+                <label for="birthDate">Date de naissance</label>
+                <input type="date" placeholder="01/01/1970" id="birthDate">    
+            </div>        
+
+            <div class="formField">
+                <label for="birthLocation">Lieu de naissance</label>
+                <input type="text" placeholder="Paris" id="birthLocation">
+            </div>      
+
+            <div class="formField">
+                <label for="adress">Adresse</label>
+                <input type="text" placeholder="999 avenue de France" id="adress">        
+            </div>       
+
+            <div class="formField">
+                <label for="postalCode">Code Postal</label>
+                <input type="number" placeholder="75001" id="postalCode">    
+            </div>        
+
+            <div class="formField">
+                <label for="city">Ville</label>
+                <input type="text" placeholder="Paris" id="city">    
+            </div>        
+
+            <div class="formField">
+                <label for="leaveDate">Date de sortie</label>
+                <input type="date" placeholder="11/11/2020" id="leaveDate">    
+            </div>        
+
+            <div class="formField">
+                <label for="leaveHour">Heure de sortie</label>
+                <input type="time" placeholder="10:00" id="leaveHour">    
+            </div>     
+
+            <!-- TODO : motif -->
+
+        </div>
+        
+        <button type="button" onclick="generatePdf();">Générer</button>
+
+        <script src="node_modules/html2canvas/dist/html2canvas.min.js"></script>
+        <script src="node_modules/jspdf/dist/jspdf.umd.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
